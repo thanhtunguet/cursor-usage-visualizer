@@ -1,0 +1,5 @@
+{
+  "name": "Cursor Usage Visualizer",
+  "description": "A dashboard to visualize Cursor IDE usage data from CSV exports, tracking costs, tokens, and model distribution.",
+  "requestFramePermissions": []
+}
