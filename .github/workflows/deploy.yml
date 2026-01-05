@@ -42,11 +42,13 @@ jobs:
           if [[ "$REPO_NAME" == *.github.io ]]; then
             echo "path=/" >> $GITHUB_OUTPUT
           else
-            echo "path=/$REPO_NAME/" >> $GITHUB_OUTPUT
+            echo "path=/" >> $GITHUB_OUTPUT
           fi
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html
         env:
           BASE_PATH: ${{ steps.base_path.outputs.path }}
 
