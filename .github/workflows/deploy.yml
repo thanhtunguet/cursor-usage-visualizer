@@ -42,7 +42,7 @@ jobs:
           if [[ "$REPO_NAME" == *.github.io ]]; then
             echo "path=/" >> $GITHUB_OUTPUT
           else
-            echo "path=/" >> $GITHUB_OUTPUT
+            echo "path=/cursor-usage-visualizer" >> $GITHUB_OUTPUT
           fi
 
       - name: Build
